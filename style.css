@@ -1,0 +1,75 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  html {
+    background-color: rgb(202, 72, 219);
+  }
+  
+  section {
+    border: 1px solid blue;
+    width: 33.33%;
+    float: left;
+    position: relative;
+  
+    padding: 10px;
+    padding-top: 60px;
+    color: mistyrose;
+    background-color: solid pink;
+  }
+  p {
+    text-align: center;
+  }
+  
+  h1 {
+    text-align: center;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    font-size: 75px;
+    font-family: fantasy;
+  }
+  
+  section > span {
+    background-color: rgb(117, 140, 245);
+  }
+  
+  span p.title {
+    font-weight: bold;
+    font-style: Arial;
+  }
+  
+  span {
+    border: 1px solid lightslategray;
+    position: absolute;
+    width: 35%;
+    height: 30%;
+    top: 0;
+    bottom: 0;
+    right: 0;
+  }
+  
+
+  @media (max-width: 992px) {
+    section{
+      width: 100%;
+    }
+  }
+
+  @media (min-width: 767px) and (max-width: 992px) {
+    section.first {
+      width: 50%;
+    }
+  
+    section.second {
+      width: 50%;
+    }
+    section.third {
+      width: 100%;
+    }
+  }
+
+  @media (min-width: 767px) {
+    section {
+      width: 100%;
+    }
+  }
